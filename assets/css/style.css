@@ -2,24 +2,28 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
   font-size: 19px;
 }
 .container {
+  width: 100%;
   min-height: 100vh;
   background-image: url(../imgs/wolves-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 .header {
   background-color: #777a7e80;
-  padding: 10px 30px;
+  padding: 9px 23px;
   width: 100%;
   min-height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
 }
 .logo {
   font-size: 1.3em;
@@ -33,9 +37,70 @@
 }
 .navigation {
   display: flex;
-  gap: 2px 30px;
+  gap: 2px 12px;
 }
 .navLink {
   text-decoration: none;
+  font-size: 1.1em;
   color: antiquewhite;
+  text-shadow: 2px 2px 2px black;
+} 
+.navLink:hover {
+  color: rgb(11, 151, 128);
+}
+.main-content {
+  flex: 1 0 auto;
+  display: flex;
+}
+.information {
+  margin: 50px;
+  padding: 10px;
+  width: 100%;
+  max-width: 570px;
+  height: 435px;
+}
+.title-main {
+  color: #1d2b38;
+  text-shadow: 2px 2px 3px #fafafa;
+  font-size: 5em;
+  font-weight: bold;
+}
+.description-main {
+  width: 100%;
+  max-width: 270px;
+  padding: 10px;
+  font-size: 1.6em;
+  color: #1d2b38;
+  text-shadow: 2px 2px 3px #fafafa;
+  line-height: 1.2em;
+}
+.click-link {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: antiquewhite;
+  text-shadow: 2px 2px 3px #1d2b38;
+}
+
+span {
+  color: #021e38;
+  text-shadow: 2px 2px 3px #fafafa;
+}
+
+@media(max-width:920px) {
+  .container {
+    background-image: url(../imgs/wolfBlack-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media(max-width:350px) {
+  .information {
+    margin: 5px;
+    height: 200px;
+  }
+  span {
+    font-size: 1.2em;
+    text-shadow: 2px 1px 1px #f8f1f1;
+  }
 }
