@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 19px;
+}
+.container {
+  min-height: 100vh;
+  background-image: url(../imgs/wolves-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  background-color: #777a7e80;
+  padding: 10px 30px;
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.logo {
+  font-size: 1.3em;
+  color: antiquewhite;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logoPageImg{
+  width: 40px;
+}
+.navigation {
+  display: flex;
+  gap: 2px 30px;
+}
+.navLink {
+  text-decoration: none;
+  color: antiquewhite;
+}
