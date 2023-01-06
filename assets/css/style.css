@@ -5,6 +5,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 19px;
 }
+/*styles for page header content*/
 .container {
   width: 100%;
   min-height: 100vh;
@@ -50,6 +51,7 @@
 .navLink:hover {
   color: rgb(11, 151, 128);
 }
+/*styles of the main content, important texts that refer to the secondary page*/
 #main-content {
   flex: 1 0 auto;
 }
@@ -86,7 +88,7 @@ span {
   color: #021e38;
   text-shadow: 2px 2px 3px #fafafa;
 }
-
+/*Mobile-first and other screens*/
 @media(max-width:920px) {
   .container {
     background-image: url(../imgs/wolfBlack-background.jpg);
